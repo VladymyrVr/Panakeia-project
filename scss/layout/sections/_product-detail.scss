@@ -37,12 +37,14 @@
      &:nth-child(2n) button {
        @include button(#4b4e73, #ffffff)
      }
-     &:nth-child(2n) .img-detail-wrapper {
-       order: -1;
-       margin-right: 10px;
+     &:nth-child(2n) .content-details {
+       order: 2;
      }
      &:nth-child(2n+1) .content-details {
         margin-right: 10px;
+     }
+     &:nth-child(2n) .img-detail-wrapper {
+       margin-right: 10px;
      }
    }
 }

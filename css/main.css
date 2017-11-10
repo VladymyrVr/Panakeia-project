@@ -540,11 +540,13 @@ input {
   font: 400 18px/30px 'Roboto Slab';
   color: #ffffff;
 }
-.detail-list li:nth-child(2n) .img-detail-wrapper {
-  order: -1;
-  margin-right: 10px;
+.detail-list li:nth-child(2n) .content-details {
+  order: 2;
 }
 .detail-list li:nth-child(2n+1) .content-details {
+  margin-right: 10px;
+}
+.detail-list li:nth-child(2n) .img-detail-wrapper {
   margin-right: 10px;
 }
 
@@ -604,12 +606,12 @@ input {
     font-size: 0.8em;
   }
 }
-@media only screen and (max-width: 1145px) {
+@media only screen and (max-width: 1150px) {
   .detail-list li {
     justify-content: center;
   }
-  .detail-list li:nth-child(2n) .img-detail-wrapper {
-    order: 1;
+  .detail-list li:nth-child(2n) .content-details {
+    order: 0;
   }
   .detail-list li .content-details {
     max-width: 520px;
@@ -705,6 +707,20 @@ input {
   .news-section .new-list li:last-child {
     margin: 0 0 30px 0;
   }
+
+  .open span {
+    height: 3px;
+  }
+  .open span:nth-child(1) {
+    margin-top: 10px;
+    z-index: 9;
+  }
+  .open span:nth-child(2) {
+    margin-top: 20px;
+  }
+  .open span:nth-child(3) {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 560px) {
   .subscribe-section {
@@ -723,5 +739,9 @@ input {
   .product-details-section .img-detail-wrapper {
     width: 400px;
     height: 300px;
+  }
+
+  .logo img {
+    height: 25px;
   }
 }
