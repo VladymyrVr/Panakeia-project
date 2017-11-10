@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1165px;
+  margin: 0 auto;
+  height: inherit;
+}
+hgroup {
+  font-family: 'Roboto Slab', serif;
+}
+p {
+  font-family: 'Roboto' , serif;
+}
+li {
+  display: inline-block;
+}
+input {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #f3f4f6;
+  font: 400 18px/30px 'Roboto Slab';
+}
+::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.5s ease;
+}
+:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.5s ease;
+}

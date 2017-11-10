@@ -1,0 +1,78 @@
+.welcome-section {
+  background: $gradient,  url("../images/welcome-background.png") no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  padding: 0 15px;
+    .read-more {
+    margin-top: 60px;
+    @include button(#ffffff, #612316);
+    }
+}
+.flex-welcome-wrapper {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-header {
+  h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 4.5em;
+    line-height: 48px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+  h3 {
+    color: #ffffff;
+    line-height: 48px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.menu-list {
+  margin-top: 80px;
+  display: flex;
+    li {
+      max-width: 300px;
+      text-align: center;
+      &:nth-child(3n+2) {
+        margin: 0 50px;
+      }
+        h3 {
+          color: #ffffff;
+          font-size: 1.8em;
+          font-weight: 700;
+          line-height: 1.5em;
+          margin-top: 10px;
+        }
+        p {
+          color: #ffffff;
+          font-weight: 300;
+          font-size: 0.9em;
+          line-height: 1.8em;
+        }
+        .more-detail {
+          @include button(#ffffff, #612316);
+          width: 100px;
+          height: 40px;
+          font: 300 15px/30px 'Roboto';
+          display: none;
+          text-align: center;
+        }
+    }
+}
+.wrapper-img {
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #edeff1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}

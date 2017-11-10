@@ -1,0 +1,40 @@
+.subscribe-section {
+  padding: 80px 0 100px 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(5, 24, 76, 0) 84%, rgba(6, 28, 91, 0) 100%), url("../images/subscribe-background.png") no-repeat center;
+  background-size: cover;
+    h2 {
+      @include h2-style(#ffffff);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0 auto;
+      max-width: 550px;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+}
+.form-flex-wrapper {
+  display: flex;
+  justify-content: center;
+    input {
+      margin-right: 120px;
+      padding-left: 40px;
+      width: 350px;
+      height: 51px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.2);
+      font: 400 18px 'Roboto Slab';
+      color: #f3f4f6;
+      position: relative;
+    }
+    .sign-up-button {
+      position: absolute;
+      left: 53%;
+      @include button(#ffffff, #612316);
+    }
+}
