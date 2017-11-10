@@ -719,4 +719,9 @@ input {
   .subscribe-section .form-flex-wrapper button {
     position: static;
   }
+
+  .product-details-section .img-detail-wrapper {
+    width: 400px;
+    height: 300px;
+  }
 }
